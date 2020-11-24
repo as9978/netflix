@@ -52,7 +52,11 @@ export default function SignIn() {
               placeholder="Password"
               onChange={({ target }) => setPassword(target.value)}
             />
-            <Form.Submit disabled={isInvalid} type="submit" data-testid="sign-in">
+            <Form.Submit
+              disabled={isInvalid}
+              type="submit"
+              data-testid="sign-in"
+            >
               Sign In
             </Form.Submit>
           </Form.Base>
@@ -61,7 +65,8 @@ export default function SignIn() {
             New to Netflix? <Form.Link to="/signup">Sign up now.</Form.Link>
           </Form.Text>
           <Form.TextSmall>
-            This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.
+            This page is protected by Google reCAPTCHA to ensure you're not a
+            bot. Learn more.
           </Form.TextSmall>
         </Form>
       </HeaderContainer>
